@@ -119,3 +119,4 @@ Per impostare un cron job su un server Alma Linux (o su qualsiasi sistema Linux)
     ```bash
     sudo crontab -l
     ```
+Lorenzo Galvani - Princess Fernandez - Andrea Guidetti
