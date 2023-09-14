@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+</head>
+<body style="overflow:auto">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <ul class="nav nav-pills ">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="chi_siamo.html">About Us</a>
+            </li>
+            <li class="nav-item  px-2">
+              <a class="nav-link text-white" href="#">Cloud</a>
+            </li>
+            <li class="nav-item  px-2">
+              <a class="nav-link text-white" href="iot.html">IoT</a>
+            </li>
+            <li class="nav-item  px-2">
+                <a class="nav-link text-white" href="networking.html">Networking</a>
+            </li>
+            <li class="nav-item  px-2">
+              <a class="nav-link text-white" href="sito_web.html">Website</a>
+            </li>
+            <li class="nav-item  px-2">
+                <a class="nav-link text-white" href="table.php">Telemetries</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="https://www.fitstic.it/it/b/5494/tecnico-superiore-per-la-progettazione-di-infrastrutture-e-la-gestione">
+                <img src="images/Imola.png" style="width: 8%;" > 
+              </a> 
+            </li>
+          </ul>   
+        </div>
+
+      </nav>
+    <!-- Header -->
+    <header>
+        <p class="h1">Cloud</p>
+    </header>
+
+    <!-- Primo blocco di pagina -->
+    <div class="container-fluid  px-xxl-5 py-5 d-flex w">
+        <div class="box-content">
+            <!-- container per il testo -->
+            <div class="p-2 flex-grow-1">
+                <h1 class="title">Alexa skill for data monitoring</h1>
+                <h5 class="subtitle">
+                  The Cloud development team has created an Alexa skill for the smart home that enables the management of turning on and off the LED or reading the temperature of Arduino.
+                </h5>
+
+            </div>
+            <!--cloud img-->
+            <img class="img-fluid" style="width: 20%; margin-left: 4%;" src="./images/computing-cloud-cloud-svgrepo-com.svg" alt="image"> 
+        </div>
+      </div>
+
+    </div>
+    <!-- secondo blocco di pagina -->
+    <div class="container-fluid px-xxl-5 py-5 gray-container">
+        <div class="box-content">
+            <img class="img-fluid" style="width: 20%; margin-right: 4%;" src="./images/python-package-index-svgrepo-com.svg" alt="image">
+
+            <div class="box-container">
+              <div class="p-2 flex-grow-1">
+                <h1 class="title">Details</h1>
+                <h5 class="subtitle">The skill is composed of various components, including the pre-built voice model and the Python-written lambda function.
+                </h5>
+                <div>
+                  The lambda function manages the exchange of messages between the laptop connected to Arduino and the Alexa servers, correctly sending the executed commands to the website's database. The lambda function is triggered every time the voice model detects a power on/off command or a temperature reading request.
+                </div>
+                <div  class=" pt-4">
+                  The command is sent to the laptop, which is exposed on the internet through an Ngrok tunnel. The laptop responds with a message confirming the power on/off action or providing the temperature. The lambda function then sends the information to the website's database using JSON files.
+                </div>
+              </div>
+             
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+<footer class="text-center text-lg-start text-muted">
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+
+          <!-- Fitstic first column footer-->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">FITSTIC</h6>
+            <p>
+              Fondazione Istituto Tecnico Superiore
+              Tecnologie e Industrie Creative
+            </p>
+            <p>P.le Macrelli 100 - 47521 Cesena (FC)</p>
+          </div>
+
+          <!--Fitstic Logo, second column footer-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4  d-flex align-items-center justify-content-center">
+            <p>
+              <a href="https://www.fitstic.it/">
+                <img src="images/logo_fitstic_bianco.jpg" style="width: 150px;" > 
+              </a> 
+            </p>
+          </div>
+
+          <!-- ITS Imola Logo third column footer-->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 d-flex align-items-center justify-content-center">
+            <p>
+              <a href="https://www.fitstic.it/it/b/5494/tecnico-superiore-per-la-progettazione-di-infrastrutture-e-la-gestione">
+                <img src="images/Imola.png" style="width: 150px;" > 
+              </a> 
+            </p>
+          </div>
+
+          <!-- Contact fourth column footer-->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p>
+              info@fitstic.it
+            <br>
+              www.fitstic.it
+            </p>
+            <div>+39 051 4858036-37</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>

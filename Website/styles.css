@@ -1,0 +1,44 @@
+body, h1{
+    margin: 0px;
+    line-height: 1.5;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+}
+
+.gray-container{
+    background-color: rgb(224, 224, 224);
+}
+
+nav{
+    background-color: rgb(1, 5, 16);
+}
+
+header{
+    background-image: url(images/network-gc54e57a30_1920.jpg);
+    padding: 150px 16px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+}
+
+.box-content{
+    display: flex;
+    flex-direction: row;
+}
+
+.title{
+    margin: 10px 0px;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.subtitle{
+    padding: 32px 0px;
+    margin: 0px 0px;
+    font-weight: 300;
+    font-size: 20px;
+}

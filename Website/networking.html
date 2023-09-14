@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body style="overflow:auto">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-sm">
+        <div class="container-fluid">
+          <ul class="nav nav-pills ">
+            <li class="nav-item">
+              <a class="nav-link text-white" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link text-white" href="chi_siamo.html">About Us</a>
+            </li>
+            <li class="nav-item  px-2">
+              <a class="nav-link text-white" href="cloud.html">Cloud</a>
+            </li>
+            <li class="nav-item  px-2">
+              <a class="nav-link text-white" href="iot.html">IoT</a>
+            </li>
+            <li class="nav-item  px-2">
+                <a class="nav-link text-white" href="#">Networking</a>
+            </li>
+            <li class="nav-item  px-2">
+              <a class="nav-link text-white" href="sito_web.html">Website</a>
+            </li>
+            <li class="nav-item  px-2">
+                <a class="nav-link text-white" href="table.php">Telemetries</a>
+            </li>
+            <li class="nav-item px-2">
+              <a href="https://www.fitstic.it/it/b/5494/tecnico-superiore-per-la-progettazione-di-infrastrutture-e-la-gestione">
+                <img src="images/Imola.png" style="width: 8%;" > 
+              </a> 
+            </li>
+          </ul>   
+        </div>
+
+      </nav>
+    <!-- Header -->
+    <header>
+        <p class="h1">Networking</p>
+    </header>
+
+    <!-- Primo blocco di pagina -->
+    <div class="container-fluid  px-xxl-5 py-5 d-flex w">
+        <div class="box-content">
+            <!-- container per il testo -->
+            <div class="p-2 flex-grow-1">
+              <h1 class="title">Network architecture and security</h1>
+              <h5 class="subtitle">
+                The cloud development team and the microcontroller development team collaborated in designing the network architecture of the project, with a particular focus on creating graphical diagrams for the entire network infrastructure.
+              </h5>
+              <div>
+                An analysis of the network traffic between the Echo Dot and Amazon servers was conducted using the packet analyzer software Wireshark. This allowed for the generation of graphs and statistics that were useful for telemetry of communications between the Echo device and Amazon servers.
+              </div>
+              <div class="pt-4">
+                The team took care of producing and installing an SSL certificate on the web server used for hosting the project's website, ensuring a secure connection through the encrypted HTTPS protocol.
+              </div>
+            </div>
+            <img class="img-fluid" style="width: 20%; margin-left: 4%;" src="/images/networking-share-svgrepo-com.svg" alt="image">  
+        </div>
+      </div>
+
+    </div>
+    <!-- secondo blocco di pagina -->
+    <div class="container-fluid px-xxl-5 py-5 gray-container">
+        <div class="box-content">
+        <!--  Possible img here
+            <div class="container-image">
+                <div class="box box-image">
+                    <img src="./images/alexa-2-svgrepo-com.svg" alt="image">
+                </div>
+            </div>
+        -->
+            <div class="box-container">
+              <!-- secondo container per il testo -->
+              <div class="p-2 flex-grow-1">
+                <h1 class="title">Graphs</h1>
+                <h5 class="subtitle">
+                  The group used Wireshark software as a protocol analyzer to monitor network traffic between the Echo Dot device and Amazon Alexa servers.
+                </h5>
+                <div>
+                  The program was set up to capture packets from the two IP addresses, and two 5-minute recordings were made - one without issuing any commands to the Echo Dot and the other with five voice inputs given. After recording the data, they used Wireshark's Conversations menu to view the data for each recording.
+                  This tool was useful for assessing the difference in bandwidth and the number of packets sent based on interactions with the device, providing valuable information for telemetry of communications between the Echo Dot and Amazon Alexa servers.       
+                  <br>Below are the graphs extracted from the recordings..</div>
+                  <br>
+                  <!-- carosello -->
+                  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img class="d-block w-100" src="/images/grafico1.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                      <img class="d-block w-100" src="/images/grafico2.png" alt="Second slide">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev btn-dark" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class=" carousel-control-prev-icon btn-dark" aria-hidden="true"></span>
+                    <span class="sr-only text-dark"><b>Previous</b></span>
+                  </a>
+                  <a class="carousel-control-next btn-dark" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon btn-dark carousel-dark" aria-hidden="true"></span>
+                    <span class="sr-only text-dark"><b>Next</b></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+<footer class="text-center text-lg-start text-muted">
+    <section>
+      <div class="container text-center text-md-start mt-5">
+        <div class="row mt-3">
+
+          <!-- Fitstic first column footer-->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">FITSTIC</h6>
+            <p>
+              Fondazione Istituto Tecnico Superiore
+              Tecnologie e Industrie Creative
+            </p>
+            <p>P.le Macrelli 100 - 47521 Cesena (FC)</p>
+          </div>
+
+          <!--Fitstic Logo, second column footer-->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4  d-flex align-items-center justify-content-center">
+            <p>
+              <a href="https://www.fitstic.it/">
+                <img src="images/logo_fitstic_bianco.jpg" style="width: 150px;" > 
+              </a> 
+            </p>
+          </div>
+
+          <!-- ITS Imola Logo third column footer-->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 d-flex align-items-center justify-content-center">
+            <p>
+              <a href="https://www.fitstic.it/it/b/5494/tecnico-superiore-per-la-progettazione-di-infrastrutture-e-la-gestione">
+                <img src="images/Imola.png" style="width: 150px;" > 
+              </a> 
+            </p>
+          </div>
+
+          <!-- Contact fourth column footer-->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p>
+              info@fitstic.it
+            <br>
+              www.fitstic.it
+            </p>
+            <div>+39 051 4858036-37</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </footer>
+</body>
+</html>
