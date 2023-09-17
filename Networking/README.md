@@ -53,7 +53,7 @@ Once inside the server, we used the following commands to install Certbot:
 
     ```bash
     sudo apt-get update
-    ``
+    ```
 
 2. Enable the EPEL repository using the command:
 
@@ -71,7 +71,7 @@ Once inside the server, we used the following commands to install Certbot:
 
 4. The following command is used to generate and install the certificate for your domain:
 
-   ```bash
+    ```bash
     sudo certbot --apache -d <example.com>
     ```
 
@@ -90,6 +90,7 @@ Once inside the server, we used the following commands to install Certbot:
 
     ```bash
     sudo certbot renew --dry-run
+    ```
 
 ## How to set up a cron job for automatic renewal of SSL certificate 
 
