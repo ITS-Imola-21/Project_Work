@@ -1,88 +1,118 @@
 # Python Virtual Environments
 
-Python virtual environments are useful for maintaining stable development and production projects.
+In Python development, isolation of dependencies per project is crucial to avoid conflicts and ensure consistency. A "Virtual Environment" enables such isolation. This tutorial will guide you on managing project-specific dependencies using virtual environments on both Windows and Linux systems.
 
-In this guide, we use `venv` to create virtual environments. The command to activate the environment depends on your system and terminal. This example uses Windows with the Command Prompt.
+We will use `venv`, a module provided in Python's standard library to create virtual environments, and `pip` to install and manage packages within these environments.
 
-The virtual environment is based on the `requirements.txt` file, which provides instructions for `pip` to create the same environment.
-
-Virtual environments have hardcoded paths to the files they need to run, so the paths will be different for each user.
+The required packages for the project are provided in the `requirements.txt` file. The paths are hardcoded in the virtual environment. As such, the paths will differ for each user.
 
 ## Table of Contents
 
 - [Creating the Virtual Environment](#creating-the-virtual-environment)
-- [Updating the Virtual Environment](#updating-the-virtual-environment)
+  - [Windows](#windows)
+  - [Linux](#linux)
+- [Activating the Virtual Environment](#activating-the-virtual-environment)
+  - [Windows](#windows-1)
+  - [Linux](#linux-1)
 - [Deactivating the Virtual Environment](#deactivating-the-virtual-environment)
+- [Updating the Virtual Environment](#updating-the-virtual-environment)
 - [Listing the packages in the Virtual Environment](#listing-the-packages-in-the-virtual-environment)
-- [Documentation](#documentation)
+- [Official Documentation and Other Tools](#official-documentation-and-other-tools)
 
 ## Creating the Virtual Environment
 
-1. Navigate to the folder where you want to store the environment using `cd <path>`. If you create it inside the repository, make sure the `.gitignore` file is present to prevent the environment from being updated with your hardcoded paths. By default, the following command should create the `.gitignore` file.
+### Windows
 
-2. Inside the folder, type:
+1. Navigate to the desired folder using the `cd` command. If the environment is inside the repository, verify `.gitignore` is present to prevent uploading the environment containing your hardcoded paths.
 
-    ```bash
-    C:\>python -m venv <env_name>
-    ```
-
-    Replace `<env_name>` with your desired environment name, for example:
+2. To create the virtual environment, run the following command:
 
     ```bash
-    C:\>python -m venv .venv
+    C:\>python -m venv <environment_name>
     ```
 
-3. Then to activate the virtual enviroment use:
+    Replace `<environment_name>` with your desired environment name.
+
+### Linux
+
+The process to create a virtual environment in Linux is similar to Windows, but you'll use `python3` instead of `python`.
+
+## Activating the Virtual Environment
+
+### Windows
+
+1. Activate the environment using the following command:
+
+    - Command prompt
+
+        ```bash
+        C:\><fullpath of the enviroment>\Scripts\activate.bat
+        ```
+
+    - PowerShell
+
+        ```powershell
+        PS C:\><fullpath of the enviroment>\Scripts\Activate.ps1
+        ```
+
+    Note: `<environment_name>` in the prompt signifies an active virtual environment.
+
+2. Now, you may install necessary packages specified in the `requirements.txt` file.
 
     ```bash
-    C:\><fullpath of the enviroment>\Scripts\activate.bat
+    C:\>(<environment_name>)pip install -r <path/to/requirements.txt>
     ```
 
-4. Now that you are inside the virtual environment, use the `requirements.txt` file to install the necessary packages.
+### Linux
 
-    Note: The `<env_name>` in the prompt indicates that you are inside the virtual environment.
+The command for Linux systems is slightly different. Following is the process:
+
+1. Activate the virtual environment with `source`:
 
     ```bash
-    C:\>(<env_name>)pip install -r <path/to/requirements.txt>
+    source <environment_name>/bin/activate
     ```
 
-    In this way the requirements to run the scripts will have all dependencies.
+2. Install necessary packages using the `requirements.txt` file:
 
-## Updating the Virtual Environment
-
-When new packages get added to enviroment the `requirements.txt` needs to get updated.
-
-To do so, while inside the enviroment and located in the folder where you want to store the `requirements.txt`, use the `pip freeze` command to generate an updated `requirements.txt` file:
-
-```bash
-C:\>(<env_name>)pip freeze > requirements.txt
-```
-This command will overwrite the existing requirements.txt file with the current package list and their versions from your virtual environment. If you've added new packages or updated existing ones, this process ensures that the requirements.txt file reflects those changes.
-
-To use the updated `requirements.txt` file to update the virtual enviroment use the same command as before:
-
-```bash
-C:\>(<env_name>)pip install -r <path/to/requirements.txt>
-```
+    ```bash
+    (environment_name) $ pip install -r <path/to/requirements.txt>
+    ```
 
 ## Deactivating the Virtual Environment
 
-Is possible that you need to deactivate the enviroment, maybe to use another one or to use the global one.
+If you need to switch environments or revert to the global one, use the `deactivate` command.
 
-To deactivate your virtual environment while it's active use the `deactivate` command:
+## Updating the Virtual Environment
+
+New packages necessitate an update in the `requirements.txt` file. Accomplish this via `pip freeze`:
 
 ```bash
-C:\>(<env_name>)deactivate
+(<environment_name>)pip freeze > requirements.txt
+```
+
+This command updates the `requirements.txt` file reflecting any added or updated packages. To install these changes, use the previous command:
+
+```bash
+(<environment_name>)pip install -r <path/to/requirements.txt>
 ```
 
 ## Listing the packages in the Virtual Environment
 
-While inside the enviroment is possible to list the packages active in the enviroment:
+To view all the installed packages and their versions in the virtual environment, use:
 
 ```bash
-C:\>(<env_name>)pip list --local
+(<environment_name>)pip list --local
 ```
 
-## Documentation
+## Official Documentation and Other Tools
 
-For more details on venv, refer to [docs.python.org](https://docs.python.org/3/library/venv.html).
+If you require more details or alternative tools, consider the following resources:
+
+- [venv Official Documentation](https://docs.python.org/3/library/venv.html).
+- [pip Official Documentation](https://pip.pypa.io/en/stable/).
+- [virtualenv](https://virtualenv.pypa.io/en/latest/)
+- [pipenv](https://github.com/pypa/pipenv)
+- [poetry](https://python-poetry.org/)
+- [conda](https://docs.conda.io/en/latest/)
+- [pipx](https://pypa.github.io/pipx/)
