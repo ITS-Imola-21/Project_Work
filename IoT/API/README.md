@@ -19,7 +19,7 @@ This is the part of the project that runs all the code needed to control the Ard
 The auto recognition of the serial port is tested only on Windows and Linux.
 If you have macOS you need to edit the code in **connect_serial.py** in the function **find_arduino()**.
 
-This code uses [FastAPI](https://fastapi.tiangolo.com/) with [uvicorn](https://www.uvicorn.org/), [pySerial](https://pythonhosted.org/pyserial/) and [pyngrok](https://pyngrok.readthedocs.io/en/latest/index.html). 
+This software is written in Python and uses [FastAPI](https://fastapi.tiangolo.com/) with [uvicorn](https://www.uvicorn.org/), [pySerial](https://pythonhosted.org/pyserial/) and [pyngrok](https://pyngrok.readthedocs.io/en/latest/index.html). 
 To install the required packages, follow the instructions in the *README.md* file located in the **Python_Environments** folder and use the **requirements.txt** file.
 
 In order to use this script, you need to create a `secret-config.json` file in the same folder as the `main.py` file. The `secret-config.json` file should have the following structure:
