@@ -61,7 +61,7 @@ Open the command prompt, `cd` to this directory, and type the following:
 - to start the server with live update:
 
 ```bash
-C:\>(<env_name>)uvicorn main:app --reload
+(<env_name>)uvicorn main:app --reload
 ```
 
 The default ip is <http://127.0.0.1:8000> so you can go there and you will receive the status of the serial conenction.
@@ -71,7 +71,7 @@ If you want to test it you can go to <http://127.0.0.1:8000/docs> and use the in
 - To run the server without live update and with different ip and/or port:
 
 ```bash
-C:\>(<env_name>)uvicorn main:app --host <IP> --port <PORT>
+(<env_name>)uvicorn main:app --host <IP> --port <PORT>
 ```
 
 ### Running the server with Ngrok
@@ -96,10 +96,17 @@ C:\>(<env_name>)uvicorn main:app --reload
 (<env_name>)PS C:\>uvicorn main:app --reload
 ```
 
+- Using Linux terminal:
+
+```bash
+(<env_name>)$ export USE_NGROK=True
+(<env_name>)$ uvicorn main:app --reload
+```
+
 - After you are sure the server is running, **stop it** and add the authtoken using this command that you find on your [ngrok dashboard](https://dashboard.ngrok.com/get-started/your-authtoken):
 
 ```bash
-C:\>ngrok config add-authtoken <YOUR TOKEN>
+ngrok config add-authtoken <YOUR TOKEN>
 ```
 
 In this way you can use Ngrok without the need to start it manually every time and the tunnel will be forwarded to the AWS lambda function automatically.
