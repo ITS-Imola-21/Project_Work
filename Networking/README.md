@@ -1,5 +1,11 @@
 # The Networking group used the following software and performed the following procedures.
 
+## <span>Draw.io</span>
+
+[Draw.io](https://www.drawio.com/) is a software of graphical design and diagramming multiplatform.
+Its interface can be used to create diagrams such as flowcharts, wireframes, UML diagrams, organizational charts and network diagrams.
+We used the aforementioned software to create all the network infrastructure diagrams of the project.
+
 ## Wireshark
 
 [Wireshark](https://www.wireshark.org/) is a protocol analysis or packet sniffer software used for network troubleshooting, analysis and development of protocols or communication software and for education, possessing all the features of a standard protocol analyzer.
@@ -27,11 +33,6 @@ Regarding the use of Power BI Desktop and how to create graphs using spreadsheet
 
 >[How to use Microsoft Power BI - Tutorial for Beginners](https://www.youtube.com/watch?v=TmhQCQr_DCA)
 
-## <span>Draw.io</span>
-
-[Draw.io](https://www.drawio.com/) is a software of graphical design and diagramming multiplatform.
-Its interface can be used to create diagrams such as flowcharts, wireframes, UML diagrams, organizational charts and network diagrams.
-We used the aforementioned software to create all the network infrastructure diagrams of the project.
 
 ## Let's Encrypt Certbot
 
