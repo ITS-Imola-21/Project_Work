@@ -1,4 +1,4 @@
-# Registration System Readme
+# Registration System
 
 This code is a registration system for collecting user information and storing it in a MySQL database. It is intended for educational purposes and can be used as a starting point for building a registration system for your web application.
 
