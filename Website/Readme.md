@@ -16,6 +16,7 @@
 - [Configuration](#configuration)
 - [Security Considerations](#security-considerations)
 - [Notes](#notes)
+- [Credits](#credits)
 
 ## Introduction 
 
@@ -84,3 +85,10 @@ This code is a basic example and may require further security enhancements, such
 ## Notes
 
 This README provides an overview of the PHP script's functionality and usage. Be sure to adapt the code to your specific requirements and consider additional security measures based on your application's needs.
+
+## Credits
+
+- Federico Pattuelli
+- Dahryl Ramirez
+- Chiara Kularatna Diyagama Liyanage
+- Alessandro Signorile
