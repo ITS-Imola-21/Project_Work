@@ -10,6 +10,7 @@ This code is a registration system for collecting user information and storing i
 - [Usage](#usage)
 - [Code Explanation](#code-explanation)
 - [Security Considerations](#security-considerations)
+- [Credits](#credits)
 
 ## Introduction
 
@@ -131,3 +132,10 @@ This code provides a basic registration system and should not be used as-is in p
 - **Code Review**: Have your code reviewed by security experts to identify vulnerabilities.
 
 Remember that this code is a starting point and should be enhanced to meet the security requirements of your application.
+
+## Credits
+
+- Federico Pattuelli
+- Dahryl Ramirez
+- Chiara Kularatna Diyagama Liyanage
+- Alessandro Signorile
