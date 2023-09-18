@@ -28,3 +28,20 @@ While this project is primarily a milestone for the ITS Imola 2023 batch, constr
 ## License
 
 This project is licensed under the [MIT License](/LICENSE).
+
+
+## Credits
+
+- [Matteo Kevin Gardi](https://github.com/MaKeG0)
+- Federico Pattuelli
+- Lorenzo Galvani
+- Federico Ghiselli
+- Chiara Kularatna Diyagama Liyanage
+- Alessandro Boschetti
+- Princess Nesslie Fernandez
+- Alessandro Gianstefani
+- Andrea Guidetti
+- Dahryl Ramirez
+- Alessandro Signorile
+- Enrico Terzi
+- Mattia Tulipani
