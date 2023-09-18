@@ -1,5 +1,10 @@
 # Il gruppo di Networking ha utilizzato i seguenti software ed eseguito le seguenti procedure
 
+## <span>Draw.io</span>
+
+[Draw.io](https://www.drawio.com/) è un software di disegno grafico gratuito multipiattaforma.
+La sua interfaccia può essere utilizzata per creare diagrammi come diagrammi di flusso, wireframe, diagrammi UML, organigrammi e diagrammi di rete.
+Per creare tutti i grafici della infrastruttura di rete del progetto abbiamo usato il suddetto software.
 ## Wireshark
 
 [Wireshark](https://www.wireshark.org/) è un software per analisi di protocollo o packet sniffer (letteralmente annusa-pacchetti) utilizzato per la soluzione di problemi di rete, per l'analisi (troubleshooting) e lo sviluppo di protocolli o di software di comunicazione e per la didattica, possedendo tutte le caratteristiche di un analizzatore di protocollo standard.
@@ -27,11 +32,7 @@ Per quanto concerne l'utilizzo di Power BI Desktop e su come creare grafici util
 
 >[How to use Microsoft Power BI - Tutorial for Beginners](https://www.youtube.com/watch?v=TmhQCQr_DCA)
 
-## <span>Draw.io</span>
 
-[Draw.io](https://www.drawio.com/) è un software di disegno grafico gratuito multipiattaforma.
-La sua interfaccia può essere utilizzata per creare diagrammi come diagrammi di flusso, wireframe, diagrammi UML, organigrammi e diagrammi di rete.
-Per creare tutti i grafici della infrastruttura di rete del progetto abbiamo usato il suddetto software.
 
 ## Let's Encrypt Certbot
 

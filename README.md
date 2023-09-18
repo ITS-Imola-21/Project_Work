@@ -17,7 +17,9 @@ The entire project can also be interacted with via the dedicated website: [ITS I
 4. **Networking**: Design and maintenance of solid network architectures. Jump into the respective subproject for comprehensive understanding.
 
 This is a schematic of the project.
-![file_diagrammaDiRete_lgv05 (1)](https://user-images.githubusercontent.com/122644330/234577818-8be5b456-520b-4928-9451-d26d5977ec32.png)
+![FINAL_INFRASCTRUCTURE_SCHEME drawio](https://github.com/ITS-Imola-21/Project_Work/assets/122644330/b5d913de-4d6c-4479-8c15-f7aeeb6c5bb4)
+
+
 
 ## Contributing
 
