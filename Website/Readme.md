@@ -1,6 +1,7 @@
 # PHP Database Interaction Script
 
 **Table of Contents**
+- [Website](#website)
 - [Introduction](#introduction)
 - [Usage](#usage)
 - [Code Overview](#code-overview)
@@ -17,6 +18,10 @@
 - [Security Considerations](#security-considerations)
 - [Notes](#notes)
 - [Credits](#credits)
+
+## Website
+
+You can access the project's goals and documentation by following this link: https://pw2023.itsimola.it/
 
 ## Introduction 
 
