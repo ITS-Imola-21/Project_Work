@@ -21,7 +21,7 @@
 
 ## Website
 
-You can access the project's goals and documentation by following this link: https://pw2023.itsimola.it/
+You can access the project's goal and documentation by following this link: https://pw2023.itsimola.it/
 
 ## Introduction 
 
