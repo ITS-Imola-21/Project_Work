@@ -1,0 +1,5 @@
+## Description
+
+This lambda function handles the message exchange between Alexa's servers and the laptop. It needs a layer because the library 'requests' is not more supported by Amazon. The pc is exposed via ngrok to avoid NAT. Alexa's servers see the laptop as a device capable of turning itself on and off (https://developer.amazon.com/en-US/docs/alexa/device-apis/alexa-powercontroller.html) and measuring temperature (https://developer.amazon.com/en-US/docs/alexa/device-apis/alexa-temperaturesensor.html), they don't know that there is an Arduino Uno connected to the laptop. The lambda function logs everything in AWS Cloudwatch, it has a basic error handling and communicates using post requests. It consists of the 'lambda_handler' function, which is launched each time the lambda functions wakes up, and the 'AlexaResponse' class, which defines the structure of the json that the lambda function sends to the Alexa's servers. It also sends data to the web site's database if all operations are successful.
+
+This part of the project was made by Federico Ghiselli, Enrico Terzi, Alessandro Gianstefani and Mattia Tulipani
