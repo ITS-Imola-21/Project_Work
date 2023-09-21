@@ -42,6 +42,6 @@ This project is licensed under the [MIT License](/LICENSE).
 - Alessandro Gianstefani
 - Andrea Guidetti
 - Dahryl Ramirez
-- Alessandro Signorile
+- [Alessandro Signorile](https://www.linkedin.com/in/alessandro-signorile-892b71183/)
 - Enrico Terzi
 - Mattia Tulipani
