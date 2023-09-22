@@ -1,5 +1,20 @@
 ## Description
 
-This lambda function handles the message exchange between Alexa's servers and the laptop. It needs a layer because the library 'requests' is not more supported by Amazon. The pc is exposed via ngrok to avoid NAT. Alexa's servers see the laptop as a device capable of turning itself on and off (https://developer.amazon.com/en-US/docs/alexa/device-apis/alexa-powercontroller.html) and measuring temperature (https://developer.amazon.com/en-US/docs/alexa/device-apis/alexa-temperaturesensor.html), they don't know that there is an Arduino Uno connected to the laptop. The lambda function logs everything in AWS Cloudwatch, it has a basic error handling and communicates using post requests. It consists of the 'lambda_handler' function, which is launched each time the lambda functions wakes up, and the 'AlexaResponse' class, which defines the structure of the json that the lambda function sends to the Alexa's servers. It also sends data to the web site's database if all operations are successful.
+Lambda Function for Alexa-Laptop Communication
+This Lambda function facilitates communication between Alexa's servers and your laptop. It requires a layer because the 'requests' library is no longer supported by Amazon. Your PC is exposed via ngrok to overcome NAT issues. Alexa's servers perceive the laptop as a device capable of turning itself on and off (Alexa Power Controller) and measuring temperature (Alexa Temperature Sensor). It's important to note that Alexa's servers are unaware of the Arduino Uno connected to the laptop.
 
-This part of the project was made by Federico Ghiselli, Enrico Terzi, Alessandro Gianstefani and Mattia Tulipani
+Functionality
+The Lambda function logs all activities in AWS CloudWatch.
+Basic error handling is implemented.
+Communication with Alexa's servers is achieved using POST requests.
+The core components of this Lambda function include:
+lambda_handler function, which is executed each time the Lambda function wakes up.
+AlexaResponse class, defining the structure of the JSON data sent to Alexa's servers.
+If all operations are successful, data is also sent to the website's database.
+Contributors
+This project was developed by:
+
+Federico Ghiselli
+Enrico Terzi
+Alessandro Gianstefani
+Mattia Tulipani
